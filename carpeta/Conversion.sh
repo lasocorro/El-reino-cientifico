@@ -14,7 +14,7 @@ read v
 if [ $v == "1" ] #un condicional que hara algo diferente dependiendo de que numero elijamos
 then 
 echo "usted eligio 'coordenadas polares a cartesianas' "
-echo -e "Digite la magnitud r"
+echo -e "Digite la magnitud del vector 'r'"
 read pr
 echo "Ahora elija si su angulo esta en radianes o en grados"
 echo -e "1:radianes, 2:Grados"
