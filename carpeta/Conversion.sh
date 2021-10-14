@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+!/usr/bin/bash
 #titulo: Coordenadas cartesianas a polares y viceversa
 #autor: Justin Santana, Laura Sofia Cortes, Juan Sebastian Sanchez
 #version:0.0.01
@@ -64,23 +64,23 @@ s="0"                                                        #s=0 y el bucle ter
 echo "Gracias por usar el programa :)"
 fi
     fi                                                       #se termina programa de conversion polar a cartesiana
-elif [ $v == "2" ]                                           #
+elif [ $v == "2" ]                                           #si elige 2(cartesianas a polares)
 then 
 echo "usted eligio 'coordenadas cartesianas a polares' "
 echo -e "Digite la cordenada x"
-read x
+read x                                                       #le pregunta al usuario los valores x y y
 echo -e "Digite la cordenada y"
 read y
 m=$(echo "($x^2)+($y^2)" | bc -l)
-mg=$(echo "sqrt($m)" | bc -l)
+mg=$(echo "sqrt($m)" | bc -l)                                #calcula de la magnitud
 f=$(echo "$y/$x" | bc -l)
-d=$(echo "a($f)" | bc -l)
+d=$(echo "a($f)" | bc -l)                                    #calculo del angulo
 echo "la magnitud r es:$mg"
 echo "El angulo en rad es:$d"
-dd=$(echo "($d*180)/$pi" | bc -l)
+dd=$(echo "($d*180)/$pi" | bc -l)                            #conversion de radianes a grados
 echo "El angulo en grados es:$dd"
-echo "Desea hacer otra conversion?"
-echo -e "1:si,2:no, digite el numero correspondiente"
+echo "Desea hacer otra conversion?"                          
+echo -e "1:si,2:no, digite el numero correspondiente"       
 read last
 if [ $last == "1" ]
 then
@@ -88,6 +88,7 @@ echo "Bienvenido"
 elif [ $last == "2" ]
 then          #fin del script del 
 s="0"
+echo "Gracias por usar el programa :)"
 fi
 fi
-done
+done 
