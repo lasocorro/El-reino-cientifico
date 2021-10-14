@@ -1,3 +1,8 @@
+#/usr/bin/bash.exe
+#titulo: Programa que muestra figuras con *
+#autor: Laura Sofia Cortes, Juan Sebastian Sanchez, Justin Steven Santana
+#version:0.0.1
+
 #Welcome to matrix Lab
 echo "  __  __    _    _____  ___  ___ __  __ "
 echo " |  \/  |  /_\  |_   _|| _ \|_ _|\ \/ / "
@@ -5,7 +10,7 @@ echo " | |\/| | / _ \   | |  |   / | |  >  < "
 echo " |_|  |_|/_/ \_\  |_|  |_|_\|___|/_/\_\ "
 echo
 echo "Bienvenido a la operadora de matices 3x3 MATRIX"
-echo "a cotinuación elije cualquiera de las siguientes opciones presionando el número correspondiente a la opción"
+echo "A cotinuación elije cualquiera de las siguientes opciones presionando el número correspondiente a la opción"
 opciones="Sumar(A+B) Multiplicar(AB)" 
 select opcion in $opciones;
 do
