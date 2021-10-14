@@ -39,30 +39,32 @@ echo "Bienvenido"                                               #si lo desea pue
 elif [ $last == "2" ]                                           #si la respuesta es no
 then                                                            #s=0 y se termina el bucle
 s="0"
+echo "Gracias por usar este programa :)"
 fi                                                     
-    elif [ $pa == "2" ]                                        
-    then
-    echo "Usted elogio grados"
-    echo -e "Ahora dijite el angulo"
-    read r
-    rg=$(echo "($r*$pi)/180" | bc -l)
-    echo "su conversion a radianes es:$rg"
-     x=$(echo "$pr*c($rg)" | bc -l)
-    y=$(echo "$pr*s($rg)" | bc -l)
-    echo "la conversion de cordenadas polares a cartesianas es:x=$x y y=$y
+    elif [ $pa == "2" ]                                         #si el angulo esta en grados                  
+    then                                                        #haga lo siguiente
+    echo "Usted escogio grados"
+    echo -e "Ahora digite el angulo en grados. Nota: Escribir el angulo sin el simbolo '°'"
+    read r                                                     #leer el angulo
+    rg=$(echo "($r*$pi)/180" | bc -l)                          #conversion de grados a radianes
+    echo "Su angulo $r en radianes es: $rg"                    #operaciones por debajo para hallar el equivalente  en coordenadas cartesianas
+    x=$(echo "$pr*c($rg)" | bc -l)                             #magnitud por coseno del angulo en rad
+    y=$(echo "$pr*s($rg)" | bc -l)                             #magnitud por seno del angulo en rad
+    echo "La conversion de coordenadas polares a cartesianas es: x=$x y y=$y
     ($x,$y)"
-    echo "Desea hacer otra conversion?"
+echo "¿Desea hacer otra conversion?"
 echo -e "1:si,2:no, digite el numero correspondiente"
-read last
-if [ $last == "1" ]
-then
+read last                                                    #leer desicion
+if [ $last == "1" ]                                          #si la respuesta es si
+then                                                         #diga lo siguiente
 echo "Bienvenido"
-elif [ $last == "2" ]
+elif [ $last == "2" ]                                        #si la respuesta es no
 then
-s="0"
+s="0"                                                        #s=0 y el bucle termina
+echo "Gracias por usar el programa :)"
 fi
-    fi
-elif [ $v == "2" ]
+    fi                                                       #se termina programa de conversion polar a cartesiana
+elif [ $v == "2" ]                                           #
 then 
 echo "usted eligio 'coordenadas cartesianas a polares' "
 echo -e "Digite la cordenada x"
