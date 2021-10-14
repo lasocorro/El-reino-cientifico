@@ -1,4 +1,4 @@
-!/usr/bin/bash
+#!/usr/bin/bash
 #titulo: Coordenadas cartesianas a polares y viceversa
 #autor: Justin Santana, Laura Sofia Cortes, Juan Sebastian Sanchez
 #version:0.0.01
