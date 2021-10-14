@@ -1,5 +1,5 @@
 #/usr/bin/bash.exe
-#titulo: Programa que muestra figuras con *
+#titulo: Programa que calcula operaciones entre matrices 3x3
 #autor: Laura Sofia Cortes, Juan Sebastian Sanchez, Justin Steven Santana
 #version:0.0.1
 
